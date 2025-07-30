@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}    
+
+.nav_bar {
+    width: 100%;
+    height: 20vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}    
+.nav_bar .nav_company_name {
+    font-weight: 500;
+    font-size: 25px;
+    
+}    
+
+.nav_bar .nav_middle_links,
+.nav_bar .nav_right_icons
+{
+    display: flex;
+    gap: 1.5rem;
+    cursor: pointer;
+}   
+
+.nav_bar .nav_middle_links span:hover{
+    font-weight: 600;   
+}    
+
+
+.hero_one_main_container{
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid green; */
+}    
+
+
+
+
+
+
+/* --------- Page 2 ----- cssss  */
+.hero_two_main_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    /* border: 10px solid green; */
+}    
+
+
+.page_two_header {
+    text-align: center;
+
+}
+.page_two_header .page_two_title {
+    font-weight: 900;
+    font-size: 5vh;
+    margin-top : 10px;
+    /* border : 1px solid red; */
+}
+.page_two_header .page_two_description {
+    color : rgb(134, 134, 134);
+    /* border: 1px solid green; */
+    margin : 20px;
+    font-size : 1.2vw;
+    font-weight: 300;
+}
+
+.page_two_collecton_image_cards  {
+    position: relative;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap : 2rem;
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 100;
+    width: 100%;
+}
+
+.page_two_collecton_image_cards .card  {
+    display: flex;
+    flex-direction: column;
+    /* border : 1px solid red; */
+    width : 20vw;
+    max-height: 55vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.page_two_collecton_image_cards 
+.card  img{
+    width: 100%;
+    height: auto;
+    max-height: 75%;
+
+}
+
+.card_description {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    text-align: center;
+    flex-grow: 1;
+    background-color: white;
+    /* justify-content: center; */
+}
+
+
+.card_item_name,
+.card_item_desc {
+    font-size: 1.1vw; 
+    line-height: 1.2;
+}
+
+.card_item_name{
+    font-weight: 700;
+}
+.card_item_desc{
+    color : rgb(134, 134, 134);
+}
+
+
+.page_two_footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: calc(50% + 1rem);
+    width: 100%;
+    min-height: 45vh;
+    /* border : 1px solid blue; */
+    background-color : rgb(247, 183, 157);
+    z-index: -110;
+    margin: 0;
+    padding : 0;
+}
+
+
+
+
+
+
+.hero_main_three_container{
+    height: 100vh;
+    width: 100%;
+    border: 10px solid khaki;
+}
+
+
+/* ---------------------- */
+
+
+.signup_page{
+    border : 10px solid navy;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    box-sizing: border-box;
+}
+
+
+
+.signup_email_left{
+    /* border : 2px solid pink; */
+    width:38vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap : 1rem;
+    margin-left : 2vw;
+}
+
+.signup_title{
+    margin-bottom: 5vh;
+    font-weight:bolder;
+    font-size: 5vh;
+}
+.signup_desc{
+    margin-bottom: 5vh;
+    font-weight: 300;
+    font-size : 1.4vw;
+    color : rgb(134, 134, 134);
+}
+
+
+
+.signup_four_photos_right{
+    /* border : 2px solid pink; */
+    width: 38vw;
+    height: 80vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.signup_first_row_images,
+.signup_second_row_images{
+    /* border : 2px solid red; */
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    display: flex;  
+}
+
+.signup_second_row_images{
+    /* border : 2px solid palegreen; */
+}
+
+
+.image_rows img{
+
+    /* border : 2px solid chocolate;  */
+    width: 50%;
+    height: 100%;
+    object-fit: cover;     
+    box-sizing: border-box;
+    padding : 5px;
+}
