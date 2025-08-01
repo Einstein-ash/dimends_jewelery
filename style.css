@@ -117,6 +117,7 @@ body {
   width: 100%;
   z-index: 4;
   pointer-events: none;
+    margin-bottom: 1%;
 }
 
 .carousel-title {
@@ -177,6 +178,15 @@ body {
   pointer-events: none;
   text-align: center;
 }
+
+.carousel_1_view_details_btn{
+    color : white;
+    background-color: black;
+    padding : 4px 8px;
+    margin : 8px 8px;
+    border-radius: 8px 8px;
+}
+
 
 
 @media (max-width: 768px) {
