@@ -7,13 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Swiper CSS -->
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-        />
-
-
 </head>
 
 <script>
@@ -31,33 +24,6 @@
 
 
 <body>
-
-
-<section class="circle-carousel">
-  <div class="carousel-container">
-    <div class="carousel-image left" data-pos="0">
-      <img src="./images/page_1/page_1_ring_1.png" alt="Left" />
-    </div>
-    <div class="carousel-image center active" data-pos="1">
-      <img src="./images/page_1/page_1_ring_2.png" alt="Center" />
-    </div>
-    <div class="carousel-image right" data-pos="2">
-      <img src="./images/page_1/page_1_ring_3.png" alt="Right" />
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <div class="page_pne_wrapper">
@@ -80,51 +46,21 @@
 
         </nav> -->
 
-
-        <!-- ---------- moibile view good , but not deskotp  -->
-        
-        <!-- <div class="mobile_nav_toggle" onclick="toggleSidebar()">☰</div>
-        
-        <div id="mobile_sidebar" class="mobile_sidebar">
-            <button class="close_btn" onclick="toggleSidebar()">✕</button>
-            <div class="sidebar_links">
-                <div class="sidebar_item active">
-                    Diamonds <span>▾</span>
-                </div>
-                <div class="sidebar_item ">
-                    <b>Accessories</b> <span>▾</span>
-                </div>
-                <div class="sidebar_item">
-                    Fine Jewelry <span>▾</span>
-                </div>
-                <div class="sidebar_item">
-                    Watches <span>▾</span>
-                </div>
-            </div>
-            <hr>
-            <div class="sidebar_footer">
-                <div class="sidebar_footer_item">🗨️ Inquiry</div>
-                <div class="sidebar_footer_item">👤 Feedback</div>
-            </div>
-        </div> -->
-        
         
         
         <!-- ---------try for deskto as well   -->
 
         <header>
   <nav class="navbar">
-    <!-- Hamburger menu button, shown only on mobile -->
     <button class="hamburger" aria-label="Open menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
 
-    <!-- Company name -->
     <div class="company-name">dimend<b>SCAASI</b></div>
 
-    <!-- Nav links, visible on desktop/tablet -->
+
     <ul class="nav-links">
       <li><a href="#">Diamonds</a></li>
       <li><a href="#">Accessories</a></li>
@@ -132,18 +68,18 @@
       <li><a href="#">Watches</a></li>
     </ul>
 
-    <!-- Icons on right -->
     <div class="nav-icons">
       <button aria-label="Search">
-        🔍
-      </button>
-      <button aria-label="User Profile">
-        👤
+        <img src="./images/search-icon.png" style="width: 20px;" alt="">
+    </button>
+    <button aria-label="User Profile">
+          <img src="./images/user.png" style="width: 20px;" alt="">
+        
       </button>
     </div>
   </nav>
 
-  <!-- Sidebar menu for mobile -->
+
   <aside class="sidebar" aria-hidden="true">
     <button class="close-btn" aria-label="Close menu">×</button>
     <ul class="sidebar-links">
@@ -157,8 +93,36 @@
 
         
 
-        <div class="hero_one_main_container">hero 1 main container</div>
+
+        <div class="hero_one_main_container">
+            
+                
+<section class="circle-carousel">
+    <div class="carousel-background-title">Vintage & Antique</div>
+
+  <div class="carousel-container">
+    <div class="carousel-image left" data-pos="0">
+      <img src="./images/page_1/page_1_ring_1.png" alt="Left" />
     </div>
+    <div class="carousel-image center active" data-pos="1">
+      <img src="./images/page_1/page_1_ring_2.png" alt="Center" />
+    </div>
+    <div class="carousel-image right" data-pos="2">
+      <img src="./images/page_1/page_1_ring_3.png" alt="Right" />
+    </div>
+  </div>
+
+  
+    <div class="carousel-text-content">
+    <p class="carousel-price">$4500</p>
+    <p class="carousel-offer">Take 20% off for a limited time.<br>Use Code: <strong>LOVE20</strong></p>
+  
+</section>
+</div>
+            
+        </div>
+</div>
+<!-- ------------- hero main 2222222222222222 --------------vvvvvv -->
     
 <div class="page_two_wrapper">
     <div class="hero_two_main_container">
@@ -210,71 +174,6 @@
 
     </div>
 </div>
-
-<!-- ------------- duplicated - > page 3 below ,,, from page 2 -->
-
-<!-- <div class="page_three_wrapper">
-    <div class="hero_two_main_container">
-
-        <div class="page_three_header">
-            <p class="page_three_title">Explore Loose Diamonds</p>
-            <p class="page_three_description">
-               Every Diamond in our collection is selected for its <br>
-                    superior cut, symmetry, and shape.
-            </p>
-        </div>
-
-        <div class="page_three_image_carousel">
-            <div class="page_three_card">
-                <img src="./images/page_3/page_3_1.png" alt="Wedding Rings">
-                <div class="page_three_card_description">
-                    <span class="page_three_card_item_name">Square</span>
-                    <span class="page_three_card_item_desc">Every diamond is our collection</span>
-                </div>
-            </div>
-
-            <div class="page_three_card">
-                <img src="./images/page_3/page_3_2.png" alt="Engagement Rings">
-                <div class="page_three_card_description">
-                    <span class="page_three_card_item_name">Heart</span>
-                    <span class="page_three_card_item_desc">Every diamond is our collection</span>
-                </div>
-            </div>
-
-            <div class="page_three_card">
-                <img src="./images/page_3/page_3_3.png" alt="Fine Jewelry">
-                <div class="page_three_card_description">
-                    <span class="page_three_card_item_name">Round</span>
-                    <span class="page_three_card_item_desc">Every diamond is our collection</span>
-                </div>
-            </div>
-
-            <div class="page_three_card">
-                <img src="./images/page_3/page_3_4.png" alt="Latest Rings">
-                <div class="page_three_card_description">
-                    <span class="page_three_card_item_name">Rectangle</span>
-                    <span class="page_three_card_item_desc">Heart</span>
-                </div>
-            </div>
-            <div class="page_three_card">
-                <img src="./images/page_3/page_3_5.png" alt="Latest Rings">
-                <div class="page_three_card_description">
-                    <span class="page_three_card_item_name">Latest Rings</span>
-                    <span class="page_three_card_item_desc">Every diamond is our collection</span>
-                </div>
-            </div>
-            <div class="page_three_card">
-                <img src="./images/page_3/page_3_6.png" alt="Latest Rings">
-                <div class="page_three_card_description">
-                    <span class="page_three_card_item_name">Latest Rings</span>
-                    <span class="page_three_card_item_desc">Every diamond is our collection</span>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</div> -->
 
 
 <!-- ------------ teyring 33333 for the best -------- -->
@@ -441,34 +340,6 @@
 
 </script>
 
-<!-- Swiper JS -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.page_three_swiper', {
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1.2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 2.5,
-        spaceBetween: 30,
-      },
-      1024: {
-        slidesPerView: 3.5,
-        spaceBetween: 40,
-      },
-    },
-  });
-</script> -->
 
 <script>
   const cards = document.querySelectorAll('.carousel-card');
@@ -489,7 +360,7 @@
 <script>
   const images = document.querySelectorAll('.carousel-image');
 
-  let currentOrder = ['left', 'center', 'right']; // initial positions
+  let currentOrder = ['left', 'center', 'right']; 
 
   images.forEach((img) => {
     img.addEventListener('click', () => {
