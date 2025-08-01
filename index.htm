@@ -31,6 +31,35 @@
 
 
 <body>
+
+
+<section class="circle-carousel">
+  <div class="carousel-container">
+    <div class="carousel-image left" data-pos="0">
+      <img src="./images/page_1/page_1_ring_1.png" alt="Left" />
+    </div>
+    <div class="carousel-image center active" data-pos="1">
+      <img src="./images/page_1/page_1_ring_2.png" alt="Center" />
+    </div>
+    <div class="carousel-image right" data-pos="2">
+      <img src="./images/page_1/page_1_ring_3.png" alt="Right" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="page_pne_wrapper">
 
         <!-- <nav class="nav_bar" >
@@ -450,6 +479,53 @@
     });
   });
 </script>
+
+
+
+
+
+
+
+<script>
+  const images = document.querySelectorAll('.carousel-image');
+
+  let currentOrder = ['left', 'center', 'right']; // initial positions
+
+  images.forEach((img) => {
+    img.addEventListener('click', () => {
+      const classList = img.classList;
+      if (classList.contains('left')) {
+          rotateCounterClockwise();
+    } else if (classList.contains('right')) {
+        rotateClockwise();
+      }
+    });
+  });
+
+  function rotateClockwise() {
+    // left → center, center → right, right → left
+    currentOrder.unshift(currentOrder.pop());
+    applyOrder();
+  }
+
+  function rotateCounterClockwise() {
+    // right → center, center → left, left → right
+    currentOrder.push(currentOrder.shift());
+    applyOrder();
+  }
+
+  function applyOrder() {
+    images.forEach((img, i) => {
+      img.className = `carousel-image ${currentOrder[i]}`;
+    });
+  }
+</script>
+
+
+
+
+
+
 
 
 
