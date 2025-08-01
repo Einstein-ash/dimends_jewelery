@@ -8,10 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 
 </head>
+
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('mobile_sidebar');
+        sidebar.classList.toggle('active');
+    }
+
+
+</script>
+
+
+
+
+
+
 <body>
     <div class="page_pne_wrapper">
 
-        <nav class="nav_bar" >
+        <!-- <nav class="nav_bar" >
             <span class="nav_company_name">dimend<b>SCAASI</b></span>
 
             <div class="nav_middle_links">
@@ -27,66 +42,208 @@
                 <span class="nav_user">U</span>
             </div>
 
-        </nav>
+        </nav> -->
+
+
+        <!-- ---------- moibile view good , but not deskotp  -->
+        
+        <!-- <div class="mobile_nav_toggle" onclick="toggleSidebar()">☰</div>
+        
+        <div id="mobile_sidebar" class="mobile_sidebar">
+            <button class="close_btn" onclick="toggleSidebar()">✕</button>
+            <div class="sidebar_links">
+                <div class="sidebar_item active">
+                    Diamonds <span>▾</span>
+                </div>
+                <div class="sidebar_item ">
+                    <b>Accessories</b> <span>▾</span>
+                </div>
+                <div class="sidebar_item">
+                    Fine Jewelry <span>▾</span>
+                </div>
+                <div class="sidebar_item">
+                    Watches <span>▾</span>
+                </div>
+            </div>
+            <hr>
+            <div class="sidebar_footer">
+                <div class="sidebar_footer_item">🗨️ Inquiry</div>
+                <div class="sidebar_footer_item">👤 Feedback</div>
+            </div>
+        </div> -->
+        
+        
+        
+        <!-- ---------try for deskto as well   -->
+
+        <header>
+  <nav class="navbar">
+    <!-- Hamburger menu button, shown only on mobile -->
+    <button class="hamburger" aria-label="Open menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Company name -->
+    <div class="company-name">dimend<b>SCAASI</b></div>
+
+    <!-- Nav links, visible on desktop/tablet -->
+    <ul class="nav-links">
+      <li><a href="#">Diamonds</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Fine Jewelry</a></li>
+      <li><a href="#">Watches</a></li>
+    </ul>
+
+    <!-- Icons on right -->
+    <div class="nav-icons">
+      <button aria-label="Search">
+        🔍
+      </button>
+      <button aria-label="User Profile">
+        👤
+      </button>
+    </div>
+  </nav>
+
+  <!-- Sidebar menu for mobile -->
+  <aside class="sidebar" aria-hidden="true">
+    <button class="close-btn" aria-label="Close menu">×</button>
+    <ul class="sidebar-links">
+      <li><a href="#">Diamonds</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Fine Jewelry</a></li>
+      <li><a href="#">Watches</a></li>
+    </ul>
+  </aside>
+</header>
+
+        
+
         <div class="hero_one_main_container">hero 1 main container</div>
     </div>
     
-    <div class="page_two_wrapper">
-        <div class="hero_two_main_container">
+<div class="page_two_wrapper">
+    <div class="hero_two_main_container">
 
-            <div class="page_two_header">
-                <p class="page_two_title">Our Collection</p>
-                <p class="page_two_description">
-                    Discover our elegant and unique fine jewelry collections, <br>
-                    ranging from classic diamond studs to stylish pendants <br>
-                    and dazzlind bracelets.
-                </p>
+        <div class="page_two_header">
+            <p class="page_two_title">Our Collection</p>
+            <p class="page_two_description">
+                Discover our elegant and unique fine jewelry collections, <br>
+                ranging from classic diamond studs to stylish pendants <br>
+                and dazzling bracelets.
+            </p>
+        </div>
+
+        <div class="page_two_collecton_image_cards">
+            <div class="card">
+                <img src="./images/collection_img_1.png" alt="Wedding Rings">
+                <div class="card_description">
+                    <span class="card_item_name">Wedding Rings</span>
+                    <span class="card_item_desc">Every diamond is our collection</span>
+                </div>
             </div>
 
-            <div class="page_two_collecton_image_cards">
-                <div class="card_1 card">
-                    <img src="./images/collection_img_1.png" alt="">
-                    <div class="card_description"> 
-                        <span class="card_item_name">Wedding Rings</span>
-                        <span class="card_item_desc">Every diamond is our collection</span>
-                    </div>
+            <div class="card">
+                <img src="./images/collection_img_2.png" alt="Engagement Rings">
+                <div class="card_description">
+                    <span class="card_item_name">Engagement Rings</span>
+                    <span class="card_item_desc">Every diamond is our collection</span>
                 </div>
-                <div class="card_2 card">
-                    <img src="./images/collection_img_2.png" alt="">
-                    <div class="card_description"> 
-                        <span class="card_item_name">Engagement Rings</span>
-                        <span class="card_item_desc">Every diamond is our collection</span>
-                    </div>
-                    
-                </div>
-                <div class="card_3 card">
-                    <img src="./images/collection_img_3.png" alt="">
-                    <div class="card_description"> 
-                        <span class="card_item_name">Fine Jewelry</span>
-                        <span class="card_item_desc">Every diamond is our collection</span>
-                    </div>
-                    
-                </div>
-                <div class="card_4 card">
-                    <img src="./images/collection_img_4.png" alt="">
-                    <div class="card_description"> 
-                        <span class="card_item_name">Latest Rings</span>
-                        <span class="card_item_desc">Every diamond is our collection</span>
-                    </div>
-
-                </div>
-
-                <div class="page_two_footer"></div>
             </div>
 
+            <div class="card">
+                <img src="./images/collection_img_3.png" alt="Fine Jewelry">
+                <div class="card_description">
+                    <span class="card_item_name">Fine Jewelry</span>
+                    <span class="card_item_desc">Every diamond is our collection</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/collection_img_4.png" alt="Latest Rings">
+                <div class="card_description">
+                    <span class="card_item_name">Latest Rings</span>
+                    <span class="card_item_desc">Every diamond is our collection</span>
+                </div>
+            </div>
+
+            <div class="page_two_footer"></div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ------------- duplicated - > page 3 below ,,, from page 2 -->
+
+<div class="page_three_wrapper">
+    <div class="hero_two_main_container">
+
+        <div class="page_three_header">
+            <p class="page_three_title">Explore Loose Diamonds</p>
+            <p class="page_three_description">
+               Every Diamond in our collection is selected for its <br>
+                    superior cut, symmetry, and shape.
+            </p>
+        </div>
+
+        <div class="page_three_image_carousel">
+            <div class="page_three_card">
+                <img src="./images/page_3/page_3_1.png" alt="Wedding Rings">
+                <div class="page_three_card_description">
+                    <span class="page_three_card_item_name">Square</span>
+                    <span class="page_three_card_item_desc">Every diamond is our collection</span>
+                </div>
+            </div>
+
+            <div class="page_three_card">
+                <img src="./images/page_3/page_3_2.png" alt="Engagement Rings">
+                <div class="page_three_card_description">
+                    <span class="page_three_card_item_name">Heart</span>
+                    <span class="page_three_card_item_desc">Every diamond is our collection</span>
+                </div>
+            </div>
+
+            <div class="page_three_card">
+                <img src="./images/page_3/page_3_3.png" alt="Fine Jewelry">
+                <div class="page_three_card_description">
+                    <span class="page_three_card_item_name">Round</span>
+                    <span class="page_three_card_item_desc">Every diamond is our collection</span>
+                </div>
+            </div>
+
+            <div class="page_three_card">
+                <img src="./images/page_3/page_3_4.png" alt="Latest Rings">
+                <div class="page_three_card_description">
+                    <span class="page_three_card_item_name">Rectangle</span>
+                    <span class="page_three_card_item_desc">Heart</span>
+                </div>
+            </div>
+            <div class="page_three_card">
+                <img src="./images/page_3/page_3_5.png" alt="Latest Rings">
+                <div class="page_three_card_description">
+                    <span class="page_three_card_item_name">Latest Rings</span>
+                    <span class="page_three_card_item_desc">Every diamond is our collection</span>
+                </div>
+            </div>
+            <div class="page_three_card">
+                <img src="./images/page_3/page_3_6.png" alt="Latest Rings">
+                <div class="page_three_card_description">
+                    <span class="page_three_card_item_name">Latest Rings</span>
+                    <span class="page_three_card_item_desc">Every diamond is our collection</span>
+                </div>
+            </div>
 
         </div>
 
     </div>
+</div>
+<!-- original page 3333333333333333  -->
 
-    <div class="page_three_wrapper">
+    <!-- <div class="page_three_wrapper">
         <div class="hero_main_three_container">
-            <div class="page_three_desc">
+            <div class="page_three_header">
                 <p class="page_three_title">Explore Loose Diamonds</p>
                 <p class="page_three_title">Every Diamond in our collection is selected for its <br>
                     superior cut, symmetry, and shape.
@@ -94,35 +251,102 @@
             </div>
 
             <div class="page_three_image_carousel">
-                page 3 image carousel
+
+                <img src="./images/signup_img_1.png" alt="">
+                <img src="./images/signup_img_1.png" alt="">
+                <img src="./images/signup_img_1.png" alt="">
+                <img src="./images/signup_img_1.png" alt="">
+                <img src="./images/signup_img_1.png" alt="">
+                <img src="./images/signup_img_1.png" alt="">
+                <img src="./images/signup_img_1.png" alt="">
+                <img src="./images/signup_img_1.png" alt="">
+      
             </div>
         </div>
-    </div>
+    </div> -->
 
 
-    <div class="signup_page">
-        <div class="signup_email_left">
-            <p class="signup_title">Keep In Touch</p>
-            <p class="signup_desc">Our kab created diamonds are the <br>
-            eco-conscious choice, and exhibit <br>
-        the same sparkle as natural diamonds</p>
- 
-        </div>
-
-        <div class="signup_four_photos_right">
-            <div class="signup_first_row_images image_rows">
-                <img src="./images/signup_img_1.png" alt="img 1"> 
-                <img src="./images/signup_img_2.png" alt="img 2">
+    <div class="page_signup_wrapper">
+        <div class="signup_page">
+            <div class="signup_email_left">
+                <p class="signup_title">Keep In Touch</p>
+                <p class="signup_desc">Our kab created diamonds are the <br>
+                eco-conscious choice, and exhibit <br>
+            the same sparkle as natural diamonds</p>
+     
             </div>
-            <div class="signup_second_row_images image_rows">
-                <img src="./images/signup_img_3.png" alt="img 3">
-                <img src="./images/signup_img_4.png" alt="img 4">
+    
+            <div class="signup_four_photos_right">
+                <div class="signup_first_row_images image_rows">
+                    <img src="./images/signup_img_1.png" alt="img 1"> 
+                    <img src="./images/signup_img_2.png" alt="img 2">
+                </div>
+                <div class="signup_second_row_images image_rows">
+                    <img src="./images/signup_img_3.png" alt="img 3">
+                    <img src="./images/signup_img_4.png" alt="img 4">
+                </div>
             </div>
+    
+            
         </div>
-
         <div class="signup_end_horizontal_line"></div>
         
     </div>
+    
+<div class="page_footer_wrapper">
+    <div class="footer_company_name">
+        <p>dimend<b>SCAASI</b></p>
+        <p class="footer_trust_desc">20+ Years of Trust</p>
+    </div>
 
+    <p class="footer_desc">
+        dimend SCAASI Jeweler is a unique Jewelery store located in <br>
+        Chicago with an emphasis on great style and exceptional quality.
+    </p>
+
+    <div class="signup_end_horizontal_line"></div>
+
+    <div class="footer_links">
+        <a href="">Education</a>
+        <a href="">About Us</a>
+        <a href="">Customer Care</a>
+        <a href="">Contact Us</a>
+    </div>
+
+    <div class="footer_companies_icons">
+        <img src="./images/footer_images/footer_img_1.png" alt="">
+        <img src="./images/footer_images/footer_img_2.png" alt="">
+        <img src="./images/footer_images/footer_img_3.png" alt="">
+        <img src="./images/footer_images/footer_img_4.png" alt="">
+        <img src="./images/footer_images/footer_img_5.png" alt="">
+        <img src="./images/footer_images/footer_img_6.png" alt="">
+        <img src="./images/footer_images/footer_img_7.png" alt="">
+        <img src="./images/footer_images/footer_img_8.png" alt="">
+        <img src="./images/footer_images/footer_img_9.png" alt="">
+    </div>
+
+    <div class="footer_copyright_desc">
+        dimendSCAASI<sup>&trade;</sup> and InnerView<sup>&reg;</sup> are registered trademark of dimend SCAASI LTD, &copy; 2010–2020 dimend SCAASI Ltd.
+        Terms of Use | SiteMap | Privacy Policy
+    </div>
+</div>
+
+<script>
+       const hamburger = document.querySelector('.hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        const closeBtn = document.querySelector('.close-btn');
+
+        hamburger.addEventListener('click', () => {
+        sidebar.classList.add('open');
+        sidebar.setAttribute('aria-hidden', 'false');
+        });
+
+        closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+        sidebar.setAttribute('aria-hidden', 'true');
+        });
+
+
+</script>
 </body>
 </html>
