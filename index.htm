@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 
+    <!-- Swiper CSS -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+
+
 </head>
 
 <script>
@@ -177,7 +184,7 @@
 
 <!-- ------------- duplicated - > page 3 below ,,, from page 2 -->
 
-<div class="page_three_wrapper">
+<!-- <div class="page_three_wrapper">
     <div class="hero_two_main_container">
 
         <div class="page_three_header">
@@ -238,7 +245,63 @@
         </div>
 
     </div>
+</div> -->
+
+
+<!-- ------------ teyring 33333 for the best -------- -->
+<div class="page_three_wrapper">
+  <div class="hero_main_three_container">
+    <div class="page_three_header">
+      <p class="page_three_title">Explore Loose Diamonds</p>
+      <p class="page_three_description">
+        Every diamond in our collection is selected for its <br />
+        superior cut, symmetry, and shape.
+      </p>
+    </div>
+
+    <!-- Scrollable container -->
+    <div class="carousel-scroll">
+      <div class="carousel-card">
+        <img src="./images/page_3/page_3_1.png" alt="Round" />
+        <div class="card-text">
+          <div class="name">Round</div>
+          <div class="desc">Every diamond in our collection</div>
+        </div>
+      </div>
+      <div class="carousel-card">
+        <img src="./images/page_3/page_3_2.png" alt="Emerald" />
+        <div class="card-text">
+          <div class="name">Emerald</div>
+          <div class="desc">Every diamond in our collection</div>
+        </div>
+      </div>
+      <div class="carousel-card active">
+        <img src="./images/page_3/page_3_3.png" alt="Oval" />
+        <div class="card-text">
+          <div class="name">Oval</div>
+          <div class="desc">Every diamond in our collection</div>
+        </div>
+      </div>
+      <div class="carousel-card">
+        <img src="./images/page_3/page_3_4.png" alt="Heart" />
+        <div class="card-text">
+          <div class="name">Heart</div>
+          <div class="desc">Every diamond in our collection</div>
+        </div>
+      </div>
+      <div class="carousel-card">
+        <img src="./images/page_3/page_3_5.png" alt="Asscher" />
+        <div class="card-text">
+          <div class="name">Asscher</div>
+          <div class="desc">Every diamond in our collection</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
 <!-- original page 3333333333333333  -->
 
     <!-- <div class="page_three_wrapper">
@@ -348,5 +411,47 @@
 
 
 </script>
+
+<!-- Swiper JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.page_three_swiper', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3.5,
+        spaceBetween: 40,
+      },
+    },
+  });
+</script> -->
+
+<script>
+  const cards = document.querySelectorAll('.carousel-card');
+  cards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+      cards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+    });
+  });
+</script>
+
+
+
 </body>
 </html>

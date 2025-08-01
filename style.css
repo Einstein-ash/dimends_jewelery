@@ -152,18 +152,6 @@ body {
 
 
 
-/* .page_two_collecton_image_cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-    margin-top: 4vh;
-    width: 100%;
-    max-width: 1200px;
-    z-index: 2;
-    justify-items: center;
-} */
-
-
 .page_two_collecton_image_cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -264,126 +252,115 @@ body {
 }
 
 
+/* ------- trying for good 3333333333----vvvvv------- */
 
-/* 0-------------- page 3 vvvvvvvv---------- */
 
-
-.hero_main_three_container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    width: 100%;
-    min-height: 100vh;
-    padding: 5vh 5vw;
-    box-sizing: border-box;
-    background-color: white;
+.page_three_wrapper {
+  width: 100%;
+  padding: 5vh 5vw;
+  background: #fff;
+  box-sizing: border-box;
 }
 
-
-
 .page_three_header {
-    text-align: center;
-    max-width: 800px;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .page_three_title {
-    font-weight: 900;
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .page_three_description {
-    color: rgb(134, 134, 134);
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
-    font-weight: 300;
-    line-height: 1.6;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: #777;
+}
+
+
+.carousel-scroll {
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+.carousel-scroll::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.carousel-card {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 1rem;
+  width: 140px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+}
+
+.card-text .name {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  font-weight: 600;
+}
+
+.card-text .desc {
+  font-size: clamp(0.75rem, 0.9vw, 0.85rem);
+  color: #888;
+  margin-top: 0.3rem;
+}
+
+
+.carousel-card.active {
+  transform: scale(1.1);
+  z-index: 2;
 }
 
 
 
-.page_three_image_carousel {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(220px, 1fr));
-    gap: 2rem;
-    margin-top: 4vh;
-    width: 100%;
-    max-width: 1200px;
-    z-index: 2;
-    justify-items: center;
+.carousel-card.active {
+  transform: scale(1.15) rotateY(0deg);
+  z-index: 2;
+  opacity: 1;
 }
 
-
-.page_three_card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    max-width: 250px;
-    transition: transform 0.3s ease;
-}
-
-.page_three_card:hover {
-    transform: translateY(-5px);
-}
-
-.page_three_card img {
-    width: 100%;
-    height: 10em;
-    object-fit: contain;
-}
-
-
-.page_three_card_description {
-    padding: 1rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-}
-
-.page_three_carditem_name {
-    font-size: clamp(1rem, 1.2vw, 1.3rem);
-    font-weight: 700;
-}
-
-.page_three_cardcard_item_desc {
-    font-size: clamp(0.9rem, 1vw, 1.1rem);
-    color: rgb(134, 134, 134);
-    font-weight: 400;
-}
-
-
-
-/* ----------- media query  of page 3----------- */
 
 @media (max-width: 768px) {
-    .page_three_image_carousel {
-        grid-template-columns: repeat(6, 1fr);
-        /* gap: 1.5rem; */
-    }
+  .carousel-track {
+    gap: 0.6rem;
+  }
+
+  .carousel-card {
+    width: 100px;
+    padding: 0.8rem;
+  }
+
+  .carousel-card img {
+    height: 80px;
+  }
+
+  .card-text .name {
+    font-size: 0.9rem;
+  }
+
+  .card-text .desc {
+    font-size: 0.75rem;
+  }
 }
-
-@media (max-width: 500px) {
-    .page_three_image_carousel {
-        grid-template-columns: repeat(2, minmax(140px, 1fr));
-        gap: 1.2rem;
-    }
-
-    .page_three_card {
-        max-width: 100%;
-    }
-
-    .page_three_card_description {
-        padding: 0.75rem;
-    }
-}
-
-
 
 /* ---------page 444444 ------------ sign up ------------- */
 
